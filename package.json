@@ -1,10 +1,9 @@
 {
-  "name": "server.js",
+  "name": "just-tech-news",
   "version": "1.0.0",
-  "description": "\"start\"",
-  "main": "node server.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
     "start": "node server.js"
   },
   "repository": {
@@ -13,8 +12,9 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tonyslonaker/just-tech-news/issues"
-  },
-  "homepage": "https://github.com/tonyslonaker/just-tech-news#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^5.22.4"
+  }
 }
