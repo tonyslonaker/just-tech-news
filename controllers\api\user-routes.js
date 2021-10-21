@@ -94,7 +94,14 @@ router.post('/login', (req, res) => {
       return;
     }
 
+    req.session.save(() => {
+      //declare session variables
+      req.session.user_id = dbUserData.id;
+      req.session.username = dbUserData.username;
+      req.session.loggedIn = true;
+
     res.json({ user: dbUserData, message: 'You are now logged in!' });
+    });
   });
 });
 
